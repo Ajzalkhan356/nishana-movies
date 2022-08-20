@@ -18,8 +18,8 @@ async def start(bot, message):
     else:
         buttons = [[
             InlineKeyboardButton('Search Movies', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Go Inline', switch_inline_query=''),
-        ]]
+           ]]
+      
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(START_MSG, reply_markup=reply_markup)
 
