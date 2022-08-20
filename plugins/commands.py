@@ -17,7 +17,7 @@ async def start(bot, message):
         await message.reply(INVITE_MSG)
     else:
         buttons = [[
-            InlineKeyboardButton('Search Movies', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('SEARCH MOVIES', switch_inline_query_current_chat=''),
            ]]
       
         reply_markup = InlineKeyboardMarkup(buttons)
