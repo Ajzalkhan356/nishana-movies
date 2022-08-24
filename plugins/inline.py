@@ -77,12 +77,13 @@ async def answer(bot, query):
 
 def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
-    buttons = [
-        [
+    buttons = [[
             InlineKeyboardButton('Search Movies', switch_inline_query_current_chat=''),
             InlineKeyboardButton('Search Again', switch_inline_query_current_chat=query),
-        ]
-    ]
+
+        ],[ InlineKeyboardButton('🥳 Invite friends 🤝', url=url),
+              ]]
+    
     return InlineKeyboardMarkup(buttons)
 
 
