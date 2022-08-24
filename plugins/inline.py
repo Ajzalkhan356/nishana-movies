@@ -83,8 +83,7 @@ def get_reply_markup(username, query):
 
         ],[ InlineKeyboardButton('🥳 Invite friends 🤝', url=url),
               ]]
-    
-    return InlineKeyboardMarkup(buttons)
+        return InlineKeyboardMarkup(buttons)
 
 
 def size_formatter(size):
