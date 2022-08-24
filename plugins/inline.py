@@ -79,8 +79,8 @@ def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [
         [
-            InlineKeyboardButton('SEARCH MOVIES', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('SEARCH AGAIN', switch_inline_query_current_chat=query),
+            InlineKeyboardButton('Search Movies❤️', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('Search Again❤️', switch_inline_query_current_chat=query),
         ]
     ]
     return InlineKeyboardMarkup(buttons)
